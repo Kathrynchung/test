@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Golden Bean Coffee Roasters</h1>
+        <p>Indulge in the Finest Coffee Experience</p>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="menu.html" target="_blank">Menu</a>
+        <a href="aboutus.html" target="_blank">About Us</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="location.html" target="_blank">Location</a>
+    </nav>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button type="submit" onclick="search()">Search</button>
+    </div>
+    <div class="popup" id="popup">
+        <p>Oops! No internet connection.</p>
+        <button id="popupbut" onclick="closePopup()">Close</button>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://via.placeholder.com/1500x500" alt="Coffee Shop" class="hero-img">
+        <div class="hero-text">
+            <h2>Discover Our Exquisite Coffee Blends</h2>
+            <p>Experience the perfect harmony of taste and aroma</p>
+        </div>
+    </div>
+    <div class="animated-img">
+        <img src="https://via.placeholder.com/200" alt="Animated Image" class="animated fadeInLeft">
+        <img src="https://via.placeholder.com/200" alt="Animated Image" class="animated fadeInUp">
+        <img src="https://via.placeholder.com/200" alt="Animated Image" class="animated fadeInRight">
+    </div>
+
+    <footer>
+        <p>Contact us for inquiries: <a href="mailto:goldenbean@roaster.com">goldenbean@roaster.com</a></p>
+        <p>&copy; 2024, goldenbean Roaster </p>
+    </footer>
+       
+    <script src="javascriot.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Place Your Order</h1>
+        <p>Fill out the form below to place your order</p>
+    </header>
+    <nav>
+        <a href="home.html" target="_blank">Home</a>
+        <a href="menu.html" target="_blank">Menu</a>
+        <a href="aboutus.html" target="_blank">About Us</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="location.html" target="_blank">Location</a>
+    </nav>
+
+    <!-- Search bar-->
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button type="submit" onclick="search()">Search</button>
+    </div>
+    <div class="popup" id="popup">
+        <p>Oops! No internet connection.</p>
+        <button id="popupbut" onclick="closePopup()">Close</button>
+    </div>
+    
+    <form action="" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="product">Select Product:</label>
+        <select id="product" name="product" required>
+            <option value="">Select a product</option>
+            <option value="Brazil">Brazil - Natalia Brito</option>
+            <option value="Peru">Peru - Swiss Water</option>
+            <option value="Colombia">Colombia - Wilder Lasso</option>
+            <option value="Benchmark">Benchmark - Seasonal Blend</option>
+            <option value="Ethiopia">Ethiopia - Adorsi Washing Station</option>
+            <option value="Indonesia">Indonesia - Wildan Mustofa</option>   
+            <option value="Peru">Peru - Swiss Water</option>
+            <option value="Colombia">Colombia - Wilder Lasso</option>
+        </select>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+          
+        <input type="submit" value="Submit Order" >
+        
+        
+    </form>
+
+    <footer>
+        <p>Contact us for inquiries: <a href="mailto:goldenbean@roaster.com">goldenbean@roaster.com</a></p>
+        <p>&copy; 2024, goldenbean Roaster </p>
+    </footer>
+
+    <script src="javascriot.js"> </script>
+</body>
+</html>

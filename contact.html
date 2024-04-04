@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>Get in Touch With us</p>
+    </header>
+    <nav>
+        <a href="home.html" target="_blank">Home</a>
+        <a href="menu.html" target="_blank">Menu</a>
+        <a href="aboutus.html" target="_blank">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="location.html" target="_blank">Location</a>
+    </nav>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button type="submit" onclick="search()">Search</button>
+    </div>
+    <div class="popup" id="popup">
+        <p>Oops! No internet connection.</p>
+        <button id="popupbut" onclick="closePopup()">Close</button>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <h2>Send Us a Message</h2>
+            <div class="contact-info">
+                <p>Have questions or feedback? Feel free to leave the message or reach out to us directly!</p>
+                <p><b>Email: goldenbean@roaster.com </b></p>
+                <p><b>Phone: 236-888-9999</b></p>
+            </div>
+            <form class="contact-form" action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact us for inquiries: <a href="mailto:goldenbean@roaster.com">goldenbean@roaster.com</a></p>
+        <p>&copy; 2024, goldenbean Roaster </p>
+    </footer>
+
+<script src="javascriot.js"> </script>
+</body>
+</html>
